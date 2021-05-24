@@ -1,28 +1,10 @@
 pipeline {
     agent any
-
     stages {
-        stage('Build') {
+        stage('Submit Stack') {
             steps {
-                echo 'Building..'
+            sh "aws cloudformation create-stack --stack-name demo-stack --template-body blueGreen.yaml --region 'us-east-1'"
+              }
+             }
             }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
             }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
-}
-
-Install AWS CLI
-	SSH and Install AWS CLI
-	Use SSM Session Manager to install wihout keys
-Jenkins File
-Run Cft using Jenkins pipeline
-	Uses AWS CLI Commands
