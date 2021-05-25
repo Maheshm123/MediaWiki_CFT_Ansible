@@ -2,6 +2,7 @@
   name: Setting Up MediaWiki
   hosts: servers
   become: yes
+  become_user: ec2-user
   tasks:
     - name: update the system
       yum:
