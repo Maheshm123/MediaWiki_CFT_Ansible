@@ -34,7 +34,7 @@ This Technologies used in this deployment is
 * To complete the deployment in a single step
 ```
 Run the Jenkins job created named "MediaWiki_Demo"
-<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/main/outputs/Jenkins_pipeline_job.png" alt="cf_output">
+<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/b1a2a5a2e6533791a93eb10ba402335651b5ab99/outputs/Jenkins_pipeline_job.PNG" alt="cf_output">
 
 ``
 
@@ -59,13 +59,13 @@ ansible-playbook playbook.yaml -u root
 
 ## Outputs
 ### cloud Formation Deployment
-<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/main/outputs/cf-output-blue_green.png" alt="cf_output">
-<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/main/outputs/Cf-output-bluegreen-complete" alt="cf_output">
+<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/b1a2a5a2e6533791a93eb10ba402335651b5ab99/outputs/cf-output-blue_green.png" alt="cf_output">
+<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/b1a2a5a2e6533791a93eb10ba402335651b5ab99/outputs/Cf-output-bluegreen-complete" alt="cf_output">
 
 ### Ansible Output
-<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/main/outputs/ansible_connection.png" alt="ansible1">
-<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/main/outputs/MediawikiSetup_throughJenkins3.png" alt="ansible2">
-<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/main/outputs/MediawikiSetup-Ansible_throughJenkins.png" alt="ansible2">
+<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/b1a2a5a2e6533791a93eb10ba402335651b5ab99/outputs/ansible_connection.png" alt="ansible1">
+<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/b1a2a5a2e6533791a93eb10ba402335651b5ab99/outputs/MediawikiSetup_throughJenkins3.png" alt="ansible2">
+<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/b1a2a5a2e6533791a93eb10ba402335651b5ab99/outputs/MediawikiSetup-Ansible_throughJenkins.png" alt="ansible2">
 
 
 
