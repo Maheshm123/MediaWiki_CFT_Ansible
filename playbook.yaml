@@ -2,7 +2,7 @@
   name: Setting Up MediaWiki
   hosts: servers
   become: yes
-  become_method: "sudo"
+  become_user: root
   tasks:
     - name: update the system
       yum:
