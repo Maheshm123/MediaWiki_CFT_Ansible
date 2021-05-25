@@ -5,12 +5,13 @@
   tasks:
     - name: Gather EC2 Facts
       ec2_instance_facts:
-        aws_secret_key: “{{ Ansible_role.sts_creds.session_key }}”
+        aws_access_key: AKIAXEK735QODAFHY6NV
+        aws_secret_key: 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
         region: us-east-1
         filters:
           instance-state-name:
             -running
-            “tag:Name” : “{{ servername}}”
+            “tag:aws:cloudformation:logical-id” : AppAutoScalingGreen
         register: ec2instances
     - name: print the registered variable
       debug:
