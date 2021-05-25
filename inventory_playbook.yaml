@@ -1,0 +1,17 @@
+-
+  name: Dynamically adding host to inventory
+  hosts: local
+  become: yes
+  tasks:
+    - name: Gather EC2 Facts
+      ec2_instance_facts:
+        aws_secret_key: “{{ Ansible_role.sts_creds.session_key }}”
+        region: us-east-1
+        filters:
+          instance-state-name:
+            -running
+            “tag:Name” : “{{ servername}}”
+        register: ec2instances
+    - name: print the registered variable
+      debug:
+        msg: "{ec2instances}"
