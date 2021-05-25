@@ -59,6 +59,7 @@ ansible-playbook playbook.yaml -u root
 
 ## Outputs
 ### cloud Formation Deployment
+<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/b1a2a5a2e6533791a93eb10ba402335651b5ab99/outputs/CFTChangesetScreenshot" alt="cf_output">
 <img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/b1a2a5a2e6533791a93eb10ba402335651b5ab99/outputs/cf-output-blue_green.png" alt="cf_output">
 <img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/b1a2a5a2e6533791a93eb10ba402335651b5ab99/outputs/Cf-output-bluegreen-complete" alt="cf_output">
 
@@ -67,7 +68,8 @@ ansible-playbook playbook.yaml -u root
 <img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/b1a2a5a2e6533791a93eb10ba402335651b5ab99/outputs/MediawikiSetup_throughJenkins3.png" alt="ansible2">
 <img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/b1a2a5a2e6533791a93eb10ba402335651b5ab99/outputs/MediawikiSetup-Ansible_throughJenkins.png" alt="ansible2">
 
-
+### Jenkins output
+<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/b1a2a5a2e6533791a93eb10ba402335651b5ab99/outputs/AutomationPipeline_using Jenkins.png" alt="jenkins1">
 
 ## Other Possible Solutions
 * We can use userdata to install the mediaWiki but the creation of userdata becomes more complex and there will be more chances to fail in b/w the run as it contains many steps.
