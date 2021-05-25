@@ -32,11 +32,11 @@ This Technologies used in this deployment is
 
 #### Running in a single Step
 * To complete the deployment in a single step
-```
+
 Run the Jenkins job created named "MediaWiki_Demo"
 <img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/b1a2a5a2e6533791a93eb10ba402335651b5ab99/outputs/Jenkins_pipeline_job.PNG" alt="cf_output">
 
-``
+
 
 #### Running Each File Seperately
 * To Deploy the Cloud Formation Stack using cli
