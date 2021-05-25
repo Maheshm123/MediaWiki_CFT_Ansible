@@ -3,7 +3,7 @@ pipeline {
     stages {
          stage('Dynamically create the inventory file for ansible') {
             steps {
-            sh "ansible-playbook inventory_playbook.yaml"
+            sh "ansible-playbook playbook.yaml"
               }
            
              }
