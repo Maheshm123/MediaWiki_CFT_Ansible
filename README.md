@@ -34,7 +34,7 @@ This Technologies used in this deployment is
 * To complete the deployment in a single step
 ```
 Run the Jenkins job created named "MediaWiki_Demo"
-<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/main/outputs/Jenkins_pipeline_job.png" alt="cf_output">
+<img src="https://github.com/Maheshm123/MediaWiki_CFT_Ansible/blob/main/outputs/Jenkins_pipeline_job.png" alt="cf_output">
 
 ``
 
