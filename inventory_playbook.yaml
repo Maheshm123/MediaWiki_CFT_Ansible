@@ -11,7 +11,7 @@
         filters:
           instance-state-name:
             -running
-            “tag:aws:cloudformation:logical-id” : AppAutoScalingGreen
+          "tag:Name" : TagServer1
         register: ec2instances
     - name: print the registered variable
       debug:
