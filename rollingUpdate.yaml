@@ -218,6 +218,7 @@ Parameters:
   VersionParameter:
     Description: Software version to deploy
     Type: String
+    Default: 1.0
 
 Mappings:
   RegionMap:
