@@ -1,6 +1,7 @@
 -
   name: Dynamically adding host to inventory
-  hosts: local
+  hosts: 127.0.0.1
+  connection: local
   become: yes
   tasks:
     - name: Gather EC2 Facts
