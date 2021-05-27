@@ -193,7 +193,7 @@ Resources:
       AutoScalingRollingUpdate:
         MinInstancesInService: '1'
         MaxBatchSize: '2'
-        PauseTime: PT1M
+        PauseTime: PT15M
         WaitOnResourceSignals: 'true'
     DependsOn:
     - AppLaunchConfigurationGreen
@@ -263,7 +263,7 @@ Resources:
       AutoScalingRollingUpdate:
         MinInstancesInService: '1'
         MaxBatchSize: '2'
-        PauseTime: PT1M
+        PauseTime: PT15M
         WaitOnResourceSignals: 'true'
     DependsOn:
     - AppLaunchConfigurationBlue
