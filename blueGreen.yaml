@@ -213,7 +213,7 @@ Resources:
           yum install httpd -y
           systemctl start httpd.service
           systemctl enable httpd.service
-          echo "<h1>Hello World welcome to blue green deployment.</h1>" > /var/www/html/index.html
+          echo "<h1>Hello World welcome to blue green deployment-- Active mode - Green</h1>" > /var/www/html/index.html
     DependsOn:
     - InstanceSecurityGroup
   AppAutoScalingBlue:
@@ -270,7 +270,7 @@ Resources:
           yum install httpd -y
           systemctl start httpd.service
           systemctl enable httpd.service
-          echo "<h1>Hello World welcome to blue green deployment.</h1>" > /var/www/html/index.html
+          echo "<h1>Hello World welcome to blue green deployment--- active mode- blue.</h1>" > /var/www/html/index.html
     DependsOn:
     - InstanceSecurityGroup
 
