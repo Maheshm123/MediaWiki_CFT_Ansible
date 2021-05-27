@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Submit Stack') {
            steps {
-             sh "/usr/local/bin/aws cloudformation create-stack --stack-name Blue-Green-deploymentStack --template-body file://./blueGreen.yaml --region 'us-east-1'"
+             sh "/usr/local/bin/aws cloudformation update-stack --stack-name Blue-Green-deploymentStack --template-body file://./blueGreen.yaml --region 'us-east-1' --use-previous-template
+"
               }
 
              }
