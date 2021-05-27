@@ -184,13 +184,16 @@ Resources:
         Ref: AppELBTargetGroupGreen ]
     CreationPolicy:
       ResourceSignal:
-       Count:
-         Ref: ASGGreenSize
+       Count: [
+        Ref: ASGGreenSize ]
        Timeout: PT15M
     UpdatePolicy:
+      AutoScalingScheduledAction:
+        IgnoreUnmodifiedGroupSizeProperties: 'true'
       AutoScalingRollingUpdate:
         MinInstancesInService: '1'
-        PauseTime: PT15M
+        MaxBatchSize: '2'
+        PauseTime: PT1M
         WaitOnResourceSignals: 'true'
     DependsOn:
     - AppLaunchConfigurationGreen
@@ -251,13 +254,16 @@ Resources:
         Ref: AppELBTargetGroupBlue ]
     CreationPolicy:
       ResourceSignal:
-       Count:
-         Ref: ASGBlueSize
+       Count: [
+        Ref: ASGBlueSize ]
        Timeout: PT15M
     UpdatePolicy:
+      AutoScalingScheduledAction:
+        IgnoreUnmodifiedGroupSizeProperties: 'true'
       AutoScalingRollingUpdate:
         MinInstancesInService: '1'
-        PauseTime: PT15M
+        MaxBatchSize: '2'
+        PauseTime: PT1M
         WaitOnResourceSignals: 'true'
     DependsOn:
     - AppLaunchConfigurationBlue
