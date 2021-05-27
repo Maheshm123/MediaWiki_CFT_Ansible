@@ -230,7 +230,7 @@ Resources:
              - "\n"
              - chkconfig httpd on
              - "\n"
-             - 'echo "<h1>Hello World welcome to blue green deployment-- Active mode - Green - latest</h1>" > /var/www/html/index.html
+             - 'echo "<h1>Hello World welcome to blue green deployment-- Active mode - Green - latest</h1>" > /var/www/html/index.html'
              - "\n"
              - service httpd start
              - "\n"
@@ -313,7 +313,7 @@ Resources:
              - "\n"
              - chkconfig httpd on
              - "\n"
-             - 'echo "<h1>Hello World welcome to blue green deployment-- Active mode - Blue - latest</h1>" > /var/www/html/index.html
+             - 'echo "<h1>Hello World welcome to blue green deployment-- Active mode - Blue - latest</h1>" > /var/www/html/index.html'
              - "\n"
              - service httpd start
              - "\n"
