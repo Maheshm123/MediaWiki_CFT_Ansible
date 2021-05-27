@@ -182,16 +182,16 @@ Resources:
         Key: Purpose
       TargetGroupARNs: [
         Ref: AppELBTargetGroupGreen ]
-      CreationPolicy:
-        ResourceSignal:
-         Count:
-           Ref: ASGGreenSize
-         Timeout: PT15M
-      UpdatePolicy:
-        AutoScalingRollingUpdate:
-          MinInstancesInService: '1'
-          PauseTime: PT15M
-          WaitOnResourceSignals: 'true'
+    CreationPolicy:
+      ResourceSignal:
+       Count:
+         Ref: ASGGreenSize
+       Timeout: PT15M
+    UpdatePolicy:
+      AutoScalingRollingUpdate:
+        MinInstancesInService: '1'
+        PauseTime: PT15M
+        WaitOnResourceSignals: 'true'
     DependsOn:
     - AppLaunchConfigurationGreen
     - ELBListenerRuleGreen
@@ -249,16 +249,16 @@ Resources:
         Key: Purpose
       TargetGroupARNs: [
         Ref: AppELBTargetGroupBlue ]
-      CreationPolicy:
-        ResourceSignal:
-         Count:
-           Ref: ASGBlueSize
-         Timeout: PT15M
-      UpdatePolicy:
-        AutoScalingRollingUpdate:
-          MinInstancesInService: '1'
-          PauseTime: PT15M
-          WaitOnResourceSignals: 'true'
+    CreationPolicy:
+      ResourceSignal:
+       Count:
+         Ref: ASGBlueSize
+       Timeout: PT15M
+    UpdatePolicy:
+      AutoScalingRollingUpdate:
+        MinInstancesInService: '1'
+        PauseTime: PT15M
+        WaitOnResourceSignals: 'true'
     DependsOn:
     - AppLaunchConfigurationBlue
     - ELBListenerRuleBlue
